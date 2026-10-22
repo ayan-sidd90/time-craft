@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Time Craft — premium watches for modern living. Discover timeless design and refined craftsmanship.">
+
+    <title>Time Craft | Crafted for Time</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <p>TIMELESS DESIGN. MODERN CHARACTER.</p>
+        <a href="#collection">Discover the collection ↗</a>
+    </div>
+
+    <header class="header">
+        <a href="#home" class="brand">
+            <span class="brand-icon">TC</span>
+            <span class="brand-name">
+                TIME CRAFT
+                <small>CRAFTED FOR TIME</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">Our Philosophy</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="bag-button" id="bag-button">
+            Shopping Bag <span id="bag-count">0</span>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <span class="eyebrow">THE ART OF EVERY SECOND</span>
+
+                <h1>Time, Crafted<br>to <em>Perfection.</em></h1>
+
+                <p>
+                    More than a timepiece. A reflection of your
+                    individuality, ambition and unmistakable style.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#collection" class="button button-gold">
+                        Explore Watches <span>↗</span>
+                    </a>
+                    <a href="#about" class="underlined-link">
+                        Our Philosophy
+                    </a>
+                </div>
+
+                <div class="hero-caption">
+                    <span class="caption-line"></span>
+                    DESIGNED FOR THE MOMENTS THAT MATTER
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <img
+                    src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&q=85"
+                    alt="Elegant luxury wristwatch"
+                    fetchpriority="high"
+                >
+
+                <div class="hero-image-overlay"></div>
+
+                <div class="hero-stamp">
+                    <span>TC</span>
+                    <small>EST. IN STYLE</small>
+                </div>
+
+                <div class="hero-product-label">
+                    <span>THE SIGNATURE SERIES</span>
+                    <strong>Elegance, in every detail.</strong>
+                </div>
+            </div>
+
+            <div class="hero-index">01 — TIMELESS COLLECTION</div>
+        </section>
+
+        <!-- BRAND VALUES -->
+        <section class="values">
+            <div class="value-item">
+                <span class="value-number">01</span>
+                <div>
+                    <h3>Considered Design</h3>
+                    <p>Every detail has a purpose.</p>
+                </div>
+            </div>
+
+            <div class="value-item">
+                <span class="value-number">02</span>
+                <div>
+                    <h3>Everyday Elegance</h3>
+                    <p>Made for your own signature style.</p>
+                </div>
+            </div>
+
+            <div class="value-item">
+                <span class="value-number">03</span>
+                <div>
+                    <h3>Timeless Appeal</h3>
+                    <p>Style beyond passing trends.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COLLECTION -->
+        <section class="collection section" id="collection">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">FIND YOUR SIGNATURE</span>
+                    <h2>Curated <em>Timepieces.</em></h2>
+                </div>
+
+                <p>
+                    A thoughtful collection of watches
+                    for every version of you.
+                </p>
+            </div>
+
+            <div class="collection-toolbar">
+                <span>OUR COLLECTION <span class="product-count">/ 04</span></span>
+
+                <div class="filters" id="filters">
+                    <button class="filter active" data-filter="all">All</button>
+                    <button class="filter" data-filter="classic">Classic</button>
+                    <button class="filter" data-filter="modern">Modern</button>
+                    <button class="filter" data-filter="sport">Sport</button>
+                </div>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <span class="product-badge">BESTSELLER</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=850&q=85"
+                            alt="The Heritage classic watch"
+                            loading="lazy"
+                        >
+                        <button class="add-button"
+                            data-name="The Heritage"
+                            data-price="8990">
+                            Add to Bag +
+                        </button>
+                    </div>
+                    <div class="product-details">
+                        <div>
+                            <h3>The Heritage</h3>
+                            <p>Classic Collection</p>
+                        </div>
+                        <strong>Rs. 8,990</strong>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="modern">
+                    <div class="product-image">
+                        <span class="product-badge">MODERN ICON</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=850&q=85"
+                            alt="The Minimal modern watch"
+                            loading="lazy"
+                        >
+                        <button class="add-button"
+                            data-name="The Minimal"
+                            data-price="10990">
+                            Add to Bag +
+                        </button>
+                    </div>
+                    <div class="product-details">
+                        <div>
+                            <h3>The Minimal</h3>
+                            <p>Modern Collection</p>
+                        </div>
+                        <strong>Rs. 10,990</strong>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="sport">
+                    <div class="product-image">
+                        <span class="product-badge">DAILY ESSENTIAL</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=850&q=85"
+                            alt="The Voyager sport-inspired watch"
+                            loading="lazy"
+                        >
+                        <button class="add-button"
+                            data-name="The Voyager"
+                            data-price="12490">
+                            Add to Bag +
+                        </button>
+                    </div>
+                    <div class="product-details">
+                        <div>
+                            <h3>The Voyager</h3>
+                            <p>Sport Collection</p>
+                        </div>
+                        <strong>Rs. 12,490</strong>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <span class="product-badge">SIGNATURE</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=850&q=85"
+                            alt="The Atelier signature watch"
+                            loading="lazy"
+                        >
+                        <button class="add-button"
+                            data-name="The Atelier"
+                            data-price="14990">
+                            Add to Bag +
+                        </button>
+                    </div>
+                    <div class="product-details">
+                        <div>
+                            <h3>The Atelier</h3>
+                            <p>Signature Collection</p>
+                        </div>
+                        <strong>Rs. 14,990</strong>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="price-note">
+                Prices shown are sample prices for this website project.
+            </p>
+        </section>
+
+        <!-- EDITORIAL BANNER -->
+        <section class="editorial" id="about">
+            <div class="editorial-image">
+                <img
+                    src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&q=85"
+                    alt="Watch detail and timeless craftsmanship"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="editorial-copy">
+                <span class="eyebrow">THE TIME CRAFT PHILOSOPHY</span>
+
+                <h2>Not Just Time.<br><em>Your Point of View.</em></h2>
+
+                <p>
+                    We believe personal style lives in the details.
+                    Time Craft celebrates thoughtful design,
+                    understated elegance and the confidence
+                    to make every moment your own.
+                </p>
+
+                <a href="#collection" class="button button-outline">
+                    Find Your Timepiece ↗
+                </a>
+
+                <span class="editorial-signature">Crafted for Time.</span>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+            <h2>Make Time <em>Your Own.</em></h2>
+            <p>Discover your next signature timepiece with Time Craft.</p>
+
+            <a href="#collection" class="button button-gold">
+                Shop the Collection ↗
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="brand footer-brand">
+            <span class="brand-icon">TC</span>
+            <span class="brand-name">
+                TIME CRAFT
+                <small>CRAFTED FOR TIME</small>
+            </span>
+        </a>
+
+        <p>Designed around time. Defined by you.</p>
+
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> Time Craft. All rights reserved.</span>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <!-- SHOPPING BAG PANEL -->
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="bag-panel" id="bag-panel"
+        aria-label="Shopping bag" aria-hidden="true">
+
+        <div class="bag-heading">
+            <div>
+                <span class="eyebrow">YOUR SELECTION</span>
+                <h2>Shopping Bag</h2>
+            </div>
+            <button id="bag-close" aria-label="Close shopping bag">✕</button>
+        </div>
+
+        <div class="bag-items" id="bag-items">
+            <p class="empty-message">
+                Your bag is empty. Find a timepiece you love.
+            </p>
+        </div>
+
+        <div class="bag-summary">
+            <div class="bag-total">
+                <span>Subtotal</span>
+                <strong id="bag-total">Rs. 0</strong>
+            </div>
+
+            <button class="button button-gold checkout-button" id="checkout">
+                Continue to WhatsApp ↗
+            </button>
+
+            <p class="price-note">
+                Sample storefront only. Confirm availability and payment details before ordering.
+            </p>
+        </div>
+    </aside>
+
+</body>
+</html>
